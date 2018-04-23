@@ -9,7 +9,7 @@ if [ "$COMMAND" = "start-chrome" ]; then
 elif [ "$COMMAND" = "stop-chrome" ]; then
   ./scripts/stop-chrome-headless.sh
 
-if [ "$COMMAND" = "test" ]; then
+elif [ "$COMMAND" = "stress-test" ]; then
   ./scripts/start-chrome-headless.sh
   npm run stress-test -- $PARAMS
   ./scripts/stop-chrome-headless.sh
