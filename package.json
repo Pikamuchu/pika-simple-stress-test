@@ -1,0 +1,22 @@
+{
+  "name": "simple-stress-test",
+  "version": "1.0.0",
+  "description": "Simple stress test script for web applications",
+  "main": "simple-stress-test.js",
+  "author": "Antonio Marin",
+  "license": "MIT",
+  "scripts": {
+    "stress-test": "node src/simple-stress-test.js",
+    "start-chrome:win": ".\\scripts\\start-chrome-headless.bat",
+    "stop-chrome:win": ".\\scripts\\stop-chrome-headless.bat",
+    "start-chrome": "./scripts/start-chrome-headless.sh",
+    "stop-chrome": "./scripts/stop-chrome-headless.sh",
+    "prettier": "prettier --single-quote --print-width 120 --write \"./**/*.js\""
+  },
+  "dependencies": {
+    "chromeless": "^1.5.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.12.0"
+  }
+}
