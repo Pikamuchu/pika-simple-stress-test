@@ -14,6 +14,11 @@ elif [ "$COMMAND" = "stress-test" ]; then
   npm run stress-test -- $PARAMS
   ./scripts/stop-chrome-headless.sh
 
+elif [ "$COMMAND" = "stress-test-docker" ]; then
+  ./scripts/docker-run-chrome-headless.sh
+  npm run stress-test -- $PARAMS
+  ./scripts/docker-stop-chrome-headless.sh
+
 elif [ "$COMMAND" = "format" ]; then
   npm run prettier
 
