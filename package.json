@@ -7,10 +7,10 @@
   "license": "MIT",
   "scripts": {
     "stress-test": "node src/simple-stress-test.js",
-    "start-chrome:win": ".\\scripts\\start-chrome-headless.bat",
-    "stop-chrome:win": ".\\scripts\\stop-chrome-headless.bat",
     "start-chrome": "./scripts/start-chrome-headless.sh",
     "stop-chrome": "./scripts/stop-chrome-headless.sh",
+    "start-chrome:win": ".\\scripts\\start-chrome-headless.bat",
+    "stop-chrome:win": ".\\scripts\\stop-chrome-headless.bat",
     "prettier": "prettier --single-quote --print-width 120 --write \"./**/*.js\""
   },
   "dependencies": {

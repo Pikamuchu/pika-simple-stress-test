@@ -1,4 +1,4 @@
-# Pika chromeless stress test 
+# Desigual simple stress test 
 
 ## Introduction
 
@@ -37,20 +37,22 @@ Install dependencies
 ```
 npm install
 ```
-
-Run simple stress test.
-```
-npm run stress-test []
-```
-
 This will start the chrome headless process
 ```
-npm run start:win
+npm run start-chrome
+```
+
+Run simple stress test.
+Parameters:
+- chunks: Number of concurrent url calls.
+- data-file: File that contains url test data.
+```
+npm run stress-test [chunks] [data-file]
 ```
 
 This will stop the chrome headless process
 ```
-npm run stop:win
+npm run stop-chrome
 ```
 
 ### Pika commands
@@ -61,7 +63,13 @@ All previous command can be executed using pika script
 Usage: pika [command]
 
 where [command] is one of:
-   stress-test - execute application tests (starts and stops chrome).
+   stress-test [chunks] [data-file] -> run the stress tests (also starts and stops chrome).
+     - chunks: Number of concurrent url calls. Default 4.
+     - data-file: File that contains url test data. Default data/test-samples.txt.
+   stress-test-docker -> run stress-test using a chrome headless docker.
+   start-chrome -> start chrome in headless mode.
+   stop-chrome -> stop chrome.
+   format -> auto format project code using prettier.
 ```
 
 ## Environment
