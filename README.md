@@ -1,4 +1,4 @@
-# Desigual simple stress test 
+# Pika simple stress test 
 
 ## Introduction
 
@@ -29,8 +29,8 @@ The following software must be installed
 
 Download the code
 ```
-git clone https://github.com/pikamachu/pika-chromeless-stress-test.git
-cd pika-chromeless-stress-test
+git clone https://github.com/pikamachu/pika-simple-stress-test.git
+cd pika-simple-stress-test
 ```
 
 Install dependencies

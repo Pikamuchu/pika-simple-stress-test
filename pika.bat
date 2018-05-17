@@ -22,13 +22,13 @@ if "%COMMAND%" == "start-chrome" (
   echo Usage: pika [command]
   echo.
   echo where [command] is one of:
-  echo    stress-test [chunks] [data-file] - run the stress tests (also starts and stops chrome). 
-  echo      - chunks: Number of concurrent url calls. Default 4.
-  echo      - data-file: File that contains url test data. Default data/test-samples.txt.
-  echo    stress-test-docker - run stress-test using a chrome headless docker.
-  echo    start-chrome - start chrome in headless mode.
-  echo    stop-chrome - stop chrome.
-  echo    format - auto format project code using prettier.
+  echo    stress-test [chunks] [data-file] - run the stress tests - also starts and stops chrome
+  echo      - chunks: Number of concurrent url calls. Default 4
+  echo      - data-file: File that contains url test data. Default data/test-samples.txt
+  echo    stress-test-docker - run stress-test using a chrome headless docker
+  echo    start-chrome - start chrome in headless mode
+  echo    stop-chrome - stop chrome
+  echo    format - auto format project code using prettier
 
   exit /b 1
 )
